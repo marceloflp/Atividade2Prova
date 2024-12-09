@@ -15,13 +15,17 @@
   Na aplicação, o marshmallow é utilizado nas seguintes classes:
   
   class AlunoSchema(Schema):
-      idade = fields.Integer(required=True) #Nessa parte, o método fields do marshmallow declara que o tipo do dado deve ser Integer e obrigatório
-      disciplina = fields.String(required=True) #Nessa parte, o método fields do marshmallow declara que o tipo do dado deve ser String e obrigatório
+  idade = fields.Integer(required=True) #Nessa parte, o método fields do marshmallow declara que o tipo do dado deve ser Integer e obrigatório
+      
+  disciplina = fields.String(required=True) #Nessa parte, o método fields do marshmallow declara que o tipo do dado deve ser String e obrigatório
   
   class RelatorioSchema(Schema):
-      titulo = fields.Str()  #Nessa parte, o método fields do marshmallow declara que o tipo do dado deve ser String e obrigatório
-      criacao = fields.Date()  #Nessa parte, o método fields do marshmallow declara que o tipo do dado deve ser Date e obrigatório
-      aluno = fields.Nested(AlunoSchema()) #Nessa parte, é criado um relacionamento com AlunosSchema
+  
+  titulo = fields.Str()  #Nessa parte, o método fields do marshmallow declara que o tipo do dado deve ser String e obrigatório
+  
+  criacao = fields.Date()  #Nessa parte, o método fields do marshmallow declara que o tipo do dado deve ser Date e obrigatório
+  
+  aluno = fields.Nested(AlunoSchema()) #Nessa parte, é criado um relacionamento com AlunosSchema
   
   Ela também é utlizada no tratamento de exceções com "ValidationError"
 
