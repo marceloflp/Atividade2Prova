@@ -4,8 +4,9 @@
   As dependências do Flask e marshmallow
   
 2- 
-  '/aluno' - Na aplicação, esse endpoint será utilizado para cadastrar um aluno utilizando o request.json, que receberá a requisição. Logo será atribuido a variável request_data para a manipulação.
-  '/relatorio' - Na aplicação, esse endpoint será utilizado para cadastrar um relatório o request.json, que receberá a requisição. Logo será atribuido a variável request_data para a manipulação.
+  '/aluno' - Na aplicação, esse endpoint será utilizado para cadastrar um aluno utilizando o request.json que receberá a requisição. Logo será atribuido a variável request_data para a manipulação.
+  
+  '/relatorio' - Na aplicação, esse endpoint será utilizado para cadastrar um relatório o request.json que receberá a requisição. Logo será atribuido a variável request_data para a manipulação.
   
 3-
   Os dados são persistidos em listas (alunos e relatorios). Uma forma mais eficiente para se utilizar na aplicação é a utilização de um banco de dados (SQLite3, MySQL, PostgreSQL, etc.).
